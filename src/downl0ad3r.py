@@ -27,10 +27,10 @@ def checkMovie(document):
         return False
 
 def downloadMovie(movieFileURL, movieName):
-    directory = "~/movies/"+movieName
+    directory = "movies/"+movieName
     if not os.path.exists(directory):
         os.makedirs(directory)
-    urllib.urlretrieve(movieFileURL, "~/movies/"+movieName+"/"+movieName+".mp4")
+    urllib.urlretrieve(movieFileURL, "movies/"+movieName+"/"+movieName+".mp4")
 
 def get4mPage(br):
     for link in br.links():
