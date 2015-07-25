@@ -3,7 +3,7 @@ Created on Jul 24, 2015
 
 @author: akrv
 '''
-import mechanize
+
 import requests
 from urlparse import urlparse
 import urllib,os

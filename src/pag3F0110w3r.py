@@ -4,11 +4,7 @@ Created on 25 Jul 2015
 @author: akrv
 '''
 import mechanize
-import requests
-from urlparse import urlparse
-import urllib
 import downl0ad3r
-from pymongo import MongoClient
 
 brow = mechanize.Browser()
 brow.set_handle_robots(False)   # no robots
