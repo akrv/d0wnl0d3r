@@ -30,7 +30,7 @@ def downloadMovie(movieFileURL, movieName):
     directory = movieName
     if not os.path.exists(directory):
         os.makedirs(directory)
-    urllib.urlretrieve(movieFileURL, movieName+".mp4")
+    urllib.urlretrieve(movieFileURL, movieName+"/"+movieName+".mp4")
 
 def get4mPage(br):
     for link in br.links():
