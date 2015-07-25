@@ -50,7 +50,8 @@ def get4mPage(br):
                             'movieID'           :   int(movieID),
                             'requestURL'        :   requestURL,
                             'downloadURL'       :   movieFileURL,
-                            'downloadType'      :   'd0wnl0ad3r'
+                            'downloadType'      :   'd0wnl0ad3r',
+                            'client'            :   'server1'
                             }
                 print document
                 if checkMovie(document) == True:
