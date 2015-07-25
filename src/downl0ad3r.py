@@ -36,7 +36,6 @@ def get4mPage(br):
     for link in br.links():
         document = {}
         if link.url[0:9]=="../movies":
-            print link.text, link.url
             movieURL = baseURL+link.url[1:len(link.url)]
             o = urlparse(movieURL).query.split("=")
             if len(o) == 4:
@@ -57,4 +56,4 @@ def get4mPage(br):
                 if checkMovie(document) == True:
                     print "checked"
                     downloadMovie(movieFileURL, movieName)
-                    #dataInDB(document)
+                    dataInDB(document)

@@ -31,3 +31,4 @@ for link in brow.links():
         downl0ad3r.get4mPage(br)
     if link.text == str(158):
         print "here"
+        break
