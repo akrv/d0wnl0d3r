@@ -11,7 +11,7 @@ brow = mechanize.Browser()
 brow.set_handle_robots(False)   # no robots
 brow.set_handle_refresh(False)  # can sometimes hang without this
 brow.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
-baseUrl = "http://www.einthusan.com/movies/index.php?lang=tamil&organize=Comedy&filtered=Action&org_type=Rating"
+baseUrl = "http://www.einthusan.com/movies/index.php?lang=tamil"
 domain = "http://www.einthusan.com/movies/index.php"
 response = brow.open(baseUrl)
 paginationRange =[]
